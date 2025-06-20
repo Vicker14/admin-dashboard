@@ -1,3 +1,5 @@
+@import url(satoshi.css);
+
 /* RESET */
 
 /* 1. Use a more-intuitive box-sizing model */
@@ -54,3 +56,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ACTUAL CSS*/
+
+:root {
+    font-family: Satoshi-regular;
+}
