@@ -59,4 +59,93 @@ h1, h2, h3, h4, h5, h6 {
 
 :root {
     font-family: Satoshi-regular;
+    
+    --side-bar-size: max(300px, 10%);
+    --dashboard-size: calc(100% - var(--side-bar-size));
+    --header-size: 4em;
+
+    --side-bar-bgcolor: #1d1d29;
+    --dashboard-bgcolor: #121212;
+    --font-color: white;
+}
+
+body {
+    display: flex;
+}
+
+ul, li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+.side-bar {
+    width: var(--side-bar-size);
+    height: 100vh;
+
+    background-color: var(--side-bar-bgcolor);
+    color: var(--font-color);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: var(--header-size);
+    gap: 10px;
+
+    font-size: 2rem;
+}
+
+.logo > *:hover {
+    cursor: pointer;
+}
+
+#business-logo {
+    filter: invert();
+    height: 5rem;
+}
+
+.actions {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.nav, .account{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav ul, .account ul{
+    width: 70%;
+}
+
+.nav ul li, .account ul li {
+    align-items: center;
+
+    margin-bottom: 1rem;
+    margin-left: 2rem;
+}
+
+.side-bar li:hover {
+    background-color: var(--font-color);
+    box-shadow: -0.3rem 0 0 0.3em var(--font-color);
+    color: var(--side-bar-bgcolor);
+
+
+    border-radius: 0.2rem;
+
+    cursor: pointer;
+}
+
+
+/* DASHBOARD ----> CONTINUE */
+.dashboard {
+    width: var(--dashboard-size);
+    background-color: var(--dashboard-bgcolor);
+    color: var(--font-color);
 }
