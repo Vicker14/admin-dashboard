@@ -62,7 +62,7 @@ h1, h2, h3, h4, h5, h6 {
     
     --side-bar-size: max(300px, 10%);
     --dashboard-size: calc(100% - var(--side-bar-size));
-    --header-size: 4em;
+    --header-size: 8rem;
 
     --side-bar-bgcolor: #1d1d29;
     --dashboard-bgcolor: #121212;
@@ -148,4 +148,20 @@ ul, li {
     width: var(--dashboard-size);
     background-color: var(--dashboard-bgcolor);
     color: var(--font-color);
+}
+
+.header {
+    display: flex;
+    align-items: center;
+
+    height: var(--header-size);
+}
+
+.live-account img {
+    filter: grayscale(100%) contrast(150%);
+
+    height: 5em;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 50%;
 }
