@@ -3,7 +3,7 @@ A practice project focused on mastering CSS Grid and Flexbox layouts. This admin
 
 [View the live demo](https://vicker14.github.io/admin-dashboard/)
 
-![Admin Dashboard Preview](./screenshot.png)
+![Admin Dashboard Preview](img/final-preview.png)
 
 ## Features
 
